@@ -1,0 +1,43 @@
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+env/
+venv/
+ENV/
+.venv/
+
+# Node & Build Outputs
+node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+.npm/
+
+# Environment Variables & Secrets
+.env
+*.env.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Non-essential scripts, PDFs & Documentation folder
+*.pdf
+generate_and_run_notebook.py
+extract_texture.py
+docs/
