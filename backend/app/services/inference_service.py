@@ -3,11 +3,19 @@ Inference & SHAP service for CardioScope AI
 Handles loading the pipeline artifact, validation, inference, and SHAP calculations.
 """
 import os
+import sys
 import json
 import joblib
 import numpy as np
 import pandas as pd
 from typing import Dict, Any, List, Optional
+
+# Ensure CyHalfBinomialLoss and Cython loss modules unpickle reliably across Python/sklearn versions
+try:
+    from sklearn._loss import _loss as _sklearn_loss
+    sys.modules['_loss'] = _sklearn_loss
+except Exception:
+    pass
 
 def compute_domain_features(row_dict: Dict[str, Any]) -> Dict[str, Any]:
     """Computes deterministic physiological domain features from patient inputs."""

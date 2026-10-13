@@ -10,6 +10,12 @@ import numpy as np
 import pandas as pd
 from typing import Dict, Any
 
+try:
+    from sklearn._loss import _loss as _sklearn_loss
+    sys.modules['_loss'] = _sklearn_loss
+except Exception:
+    pass
+
 def predict_patient(patient_dict: Dict[str, Any], generate_shap: bool = True) -> Dict[str, Any]:
     base_dir = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(base_dir, "models", "cardioscope_pipeline.joblib")
