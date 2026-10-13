@@ -14,6 +14,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "noUncheckedSideEffectImports": false,
+    "types": ["vite/client"],
 
     /* Linting */
     "strict": false,
