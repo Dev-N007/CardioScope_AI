@@ -1,0 +1,690 @@
+{
+  "rows": 303,
+  "columns": 59,
+  "target_distributions": {
+    "LAD": {
+      "Stenotic": 177,
+      "Normal": 126
+    },
+    "LCX": {
+      "Normal": 184,
+      "Stenotic": 119
+    },
+    "RCA": {
+      "Normal": 189,
+      "Stenotic": 114
+    },
+    "Cath": {
+      "CAD": 216,
+      "Normal": 87
+    }
+  },
+  "missing_per_column": {},
+  "duplicates": 0,
+  "numerical_cols": [
+    "Age",
+    "Weight",
+    "Length",
+    "BMI",
+    "BP",
+    "PR",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE"
+  ],
+  "categorical_cols": [
+    "Sex",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "Region RWMA",
+    "VHD",
+    "LAD",
+    "LCX",
+    "RCA",
+    "Cath"
+  ],
+  "col_summary": {
+    "Age": {
+      "dtype": "int64",
+      "n_unique": 46,
+      "samples": [
+        53.0,
+        67.0,
+        54.0,
+        66.0,
+        50.0
+      ],
+      "missing": 0
+    },
+    "Weight": {
+      "dtype": "int64",
+      "n_unique": 54,
+      "samples": [
+        90.0,
+        70.0,
+        54.0,
+        67.0,
+        87.0
+      ],
+      "missing": 0
+    },
+    "Length": {
+      "dtype": "int64",
+      "n_unique": 44,
+      "samples": [
+        175.0,
+        157.0,
+        164.0,
+        158.0,
+        153.0
+      ],
+      "missing": 0
+    },
+    "Sex": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "Male",
+        "Fmale"
+      ],
+      "missing": 0
+    },
+    "BMI": {
+      "dtype": "float64",
+      "n_unique": 263,
+      "samples": [
+        29.387755102040817,
+        28.398718000730252,
+        20.077334919690664,
+        26.83864765261977,
+        37.165192874535435
+      ],
+      "missing": 0
+    },
+    "DM": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "HTN": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        1.0,
+        0.0
+      ],
+      "missing": 0
+    },
+    "Current Smoker": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        1.0,
+        0.0
+      ],
+      "missing": 0
+    },
+    "EX-Smoker": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "FH": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "Obesity": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "Y",
+        "N"
+      ],
+      "missing": 0
+    },
+    "CRF": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "CVA": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Airway disease": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Thyroid Disease": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "CHF": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "DLP": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "Y",
+        "N"
+      ],
+      "missing": 0
+    },
+    "BP": {
+      "dtype": "int64",
+      "n_unique": 17,
+      "samples": [
+        110.0,
+        140.0,
+        100.0,
+        118.0,
+        130.0
+      ],
+      "missing": 0
+    },
+    "PR": {
+      "dtype": "int64",
+      "n_unique": 21,
+      "samples": [
+        80.0,
+        100.0,
+        70.0,
+        50.0,
+        84.0
+      ],
+      "missing": 0
+    },
+    "Edema": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "Weak Peripheral Pulse": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Lung rales": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Systolic Murmur": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Diastolic Murmur": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Typical Chest Pain": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "Dyspnea": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Function Class": {
+      "dtype": "int64",
+      "n_unique": 4,
+      "samples": [
+        0.0,
+        3.0,
+        2.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "Atypical": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Nonanginal": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Exertional CP": {
+      "dtype": "object",
+      "n_unique": 1,
+      "samples": [
+        "N"
+      ],
+      "missing": 0
+    },
+    "LowTH Ang": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Q Wave": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "St Elevation": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        0.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "St Depression": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        1.0,
+        0.0
+      ],
+      "missing": 0
+    },
+    "Tinversion": {
+      "dtype": "int64",
+      "n_unique": 2,
+      "samples": [
+        1.0,
+        0.0
+      ],
+      "missing": 0
+    },
+    "LVH": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "Poor R Progression": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "N",
+        "Y"
+      ],
+      "missing": 0
+    },
+    "BBB": {
+      "dtype": "object",
+      "n_unique": 3,
+      "samples": [
+        "N",
+        "LBBB",
+        "RBBB"
+      ],
+      "missing": 0
+    },
+    "FBS": {
+      "dtype": "int64",
+      "n_unique": 113,
+      "samples": [
+        90.0,
+        80.0,
+        85.0,
+        78.0,
+        104.0
+      ],
+      "missing": 0
+    },
+    "CR": {
+      "dtype": "float64",
+      "n_unique": 18,
+      "samples": [
+        0.7,
+        1.0,
+        1.2,
+        0.8,
+        0.9
+      ],
+      "missing": 0
+    },
+    "TG": {
+      "dtype": "int64",
+      "n_unique": 147,
+      "samples": [
+        250.0,
+        309.0,
+        103.0,
+        63.0,
+        170.0
+      ],
+      "missing": 0
+    },
+    "LDL": {
+      "dtype": "int64",
+      "n_unique": 110,
+      "samples": [
+        155.0,
+        121.0,
+        70.0,
+        55.0,
+        110.0
+      ],
+      "missing": 0
+    },
+    "HDL": {
+      "dtype": "float64",
+      "n_unique": 47,
+      "samples": [
+        30.0,
+        36.0,
+        45.0,
+        27.0,
+        50.0
+      ],
+      "missing": 0
+    },
+    "BUN": {
+      "dtype": "int64",
+      "n_unique": 33,
+      "samples": [
+        8.0,
+        30.0,
+        17.0,
+        16.0,
+        13.0
+      ],
+      "missing": 0
+    },
+    "ESR": {
+      "dtype": "int64",
+      "n_unique": 58,
+      "samples": [
+        7.0,
+        26.0,
+        10.0,
+        76.0,
+        27.0
+      ],
+      "missing": 0
+    },
+    "HB": {
+      "dtype": "float64",
+      "n_unique": 66,
+      "samples": [
+        15.6,
+        13.9,
+        13.5,
+        12.1,
+        13.2
+      ],
+      "missing": 0
+    },
+    "K": {
+      "dtype": "float64",
+      "n_unique": 27,
+      "samples": [
+        4.7,
+        4.4,
+        4.0,
+        4.2,
+        4.8
+      ],
+      "missing": 0
+    },
+    "Na": {
+      "dtype": "int64",
+      "n_unique": 25,
+      "samples": [
+        141.0,
+        156.0,
+        139.0,
+        142.0,
+        140.0
+      ],
+      "missing": 0
+    },
+    "WBC": {
+      "dtype": "int64",
+      "n_unique": 78,
+      "samples": [
+        5700.0,
+        7700.0,
+        7400.0,
+        13000.0,
+        9200.0
+      ],
+      "missing": 0
+    },
+    "Lymph": {
+      "dtype": "int64",
+      "n_unique": 50,
+      "samples": [
+        39.0,
+        38.0,
+        18.0,
+        55.0,
+        26.0
+      ],
+      "missing": 0
+    },
+    "Neut": {
+      "dtype": "int64",
+      "n_unique": 52,
+      "samples": [
+        52.0,
+        55.0,
+        60.0,
+        72.0,
+        39.0
+      ],
+      "missing": 0
+    },
+    "PLT": {
+      "dtype": "int64",
+      "n_unique": 135,
+      "samples": [
+        261.0,
+        165.0,
+        230.0,
+        742.0,
+        274.0
+      ],
+      "missing": 0
+    },
+    "EF-TTE": {
+      "dtype": "int64",
+      "n_unique": 11,
+      "samples": [
+        50.0,
+        40.0,
+        55.0,
+        45.0,
+        25.0
+      ],
+      "missing": 0
+    },
+    "Region RWMA": {
+      "dtype": "int64",
+      "n_unique": 5,
+      "samples": [
+        0.0,
+        4.0,
+        2.0,
+        3.0,
+        1.0
+      ],
+      "missing": 0
+    },
+    "VHD": {
+      "dtype": "object",
+      "n_unique": 4,
+      "samples": [
+        "N",
+        "mild",
+        "Severe",
+        "Moderate"
+      ],
+      "missing": 0
+    },
+    "LAD": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "Stenotic",
+        "Normal"
+      ],
+      "missing": 0
+    },
+    "LCX": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "Normal",
+        "Stenotic"
+      ],
+      "missing": 0
+    },
+    "RCA": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "Stenotic",
+        "Normal"
+      ],
+      "missing": 0
+    },
+    "Cath": {
+      "dtype": "object",
+      "n_unique": 2,
+      "samples": [
+        "CAD",
+        "Normal"
+      ],
+      "missing": 0
+    }
+  }
+}
